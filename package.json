@@ -1,0 +1,36 @@
+{
+  "name": "graphql-bookstore-prisma-demo",
+  "version": "0.0.1",
+  "description": "> This is a small **experimental** example of a GraphQL Bookstore using Prisma.",
+  "main": "main.ts",
+  "scripts": {
+    "compile": "tsc --noEmit",
+    "start": "npx prisma generate && node --experimental-transform-types ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaosdoctor/graphql-bookstore-prisma-demo.git"
+  },
+  "keywords": [],
+  "author": "Lucas Santos <hello@lsantos.dev> (https://lsantos.dev/)",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/khaosdoctor/graphql-bookstore-prisma-demo/issues"
+  },
+  "homepage": "https://github.com/khaosdoctor/graphql-bookstore-prisma-demo#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.2",
+    "prettier": "^3.5.3",
+    "prisma": "^6.9.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.2",
+    "@as-integrations/express5": "^1.1.0",
+    "@prisma/client": "^6.9.0",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0"
+  }
+}
